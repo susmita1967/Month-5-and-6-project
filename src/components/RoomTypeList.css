@@ -1,0 +1,28 @@
+.room-type-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .room-type-list {
+    width: 50%;
+  }
+  
+  .create-room-type-container {
+    width: 45%;
+  }
+  
+  .create-room-type-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .room-type-details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: left;
+  }
+  
+  .room-type-details div {
+    margin-bottom: 5px;
+  }
+  

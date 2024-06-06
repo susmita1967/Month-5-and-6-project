@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.App {
+    text-align: center;
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+nav ul li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5em;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover img {
+    transform: scale(1.1);
+}
+
+main {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1.5em;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.WelcomeSection {
+    background-image: url('/public/images/Banner\ Hotel\ Search.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.WelcomeSection h1 {
+    font-size: 3em;
+}
+  

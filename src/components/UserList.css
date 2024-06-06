@@ -1,0 +1,38 @@
+.user-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .user-list {
+    width: 50%;
+  }
+  
+  .create-user-container {
+    width: 45%;
+  }
+  
+  .create-user-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .user-details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .user-actions button {
+    margin-right: 10px;
+  }
+  .user-details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: left; 
+  }
+  
+  .user-details div {
+    margin-bottom: 5px;
+  }
+  
+  
+  

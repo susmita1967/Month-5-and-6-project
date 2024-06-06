@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "Susmita",
+    "password": "Susmita@1967",
+    "database": "my_hotel_booking_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    
+  },
+  "production": {
+    
+  }
+}

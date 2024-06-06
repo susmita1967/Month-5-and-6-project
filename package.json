@@ -1,0 +1,62 @@
+{
+  "name": "sankey_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node ./backend/postgresqlApp.js",
+    "client": "react-app-rewired start --config-overrides ./config-overrides.js",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "migrate": "sequelize db:migrate"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.10.4",
+    "apollo-server-express": "^3.13.0",
+    "assert": "^2.1.0",
+    "axios": "^1.7.2",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.19.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.8.1",
+    "graphql-ws": "^5.16.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.2",
+    "path-browserify": "^1.0.1",
+    "pg": "^8.11.5",
+    "pg-connection-string": "^2.6.4",
+    "pg-hstore": "^2.3.4",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.7.5",
+    "stream-browserify": "^3.0.0",
+    "subscriptions-transport-ws": "^0.11.0",
+    "url": "^0.11.3",
+    "util": "^0.12.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.2",
+    "react-app-rewired": "^2.2.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

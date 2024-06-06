@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "9ed21042-9e86-4df0-b0ea-b2025f8363a6",
+		"name": "Sankey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34451737"
+	},
+	"item": [
+		{
+			"name": "Fetch all hotels",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "Retrieve a list of all hotels.",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"{ hotels { id name address description } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new user.",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": " Create a new user.",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { createUser(username: \\\"newuser\\\", email: \\\"newuser@example.com\\\", role: \\\"user\\\") { id username email role } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive all users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "Retrieve a list of all users",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"{ users { id username email role } }\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creating new user in REST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"role\": \"user\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetching user data from mongodb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"query { users { id username email role } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql?query={users{id username email role}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "{users{id username email role}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,37 @@
+.hotel-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .hotel-list {
+    width: 50%;
+  }
+  
+  .create-hotel-container {
+    width: 45%;
+  }
+  
+  .create-hotel-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .hotel-details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .hotel-actions button {
+    margin-right: 10px;
+  }
+  
+  .hotel-details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: left; 
+  }
+  
+  .hotel-details div {
+    margin-bottom: 5px;
+  }
+  
